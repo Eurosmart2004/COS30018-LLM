@@ -19,7 +19,7 @@ def query(question, context):
     answer = qa_pipeline({
         'context': context,
         'question': question
-    }, max_answer_len=100)  # Set the maximum answer length to 50
+    }, max_answer_len=500)
     return answer
 	
 
