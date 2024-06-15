@@ -1,11 +1,6 @@
 import time
 from transformers import pipeline, AutoTokenizer, AutoModelForQuestionAnswering
 
-API_URL = "https://api-inference.huggingface.co/models/Eurosmart/bert-qa-mash-covid"
-
-# API_URL = "https://api-inference.huggingface.co/models/distilbert/distilbert-base-cased-distilled-squad"
-
-headers = {"Authorization": "Bearer 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"}
 
 # Load the model
 tokenizer = AutoTokenizer.from_pretrained("Eurosmart/bert-qa-mash-covid")
