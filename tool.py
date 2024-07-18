@@ -14,7 +14,7 @@ def query(question, context):
     answer = qa_pipeline({
         'context': context,
         'question': question
-    }, max_answer_len=100)
+    })
     return answer
 	
 
