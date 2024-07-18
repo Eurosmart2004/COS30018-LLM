@@ -13,8 +13,10 @@ def query(question, context):
         # Use the pipeline to answer the question
     answer = qa_pipeline({
         'context': context,
-        'question': question
-    })
+        'question': question,
+    },
+    max_answer_len=50,
+    )
     return answer
 	
 
