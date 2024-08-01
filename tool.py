@@ -15,7 +15,8 @@ def query(question, context):
         'context': context,
         'question': question,
     },
-    max_answer_len=50,
+    max_answer_len=128,
+    max_question_len=1024,
     )
     return answer
 	
@@ -27,6 +28,4 @@ def stream_data(response):
 
 
 def get_response(question, context):
-    print(context)
-    print (query(question, context))
     return query(question, context)['answer']
